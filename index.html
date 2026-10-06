@@ -521,7 +521,7 @@
             flex-grow: 1;
         }
 
-        .media-placeholder img {
+        .media-placeholder img, .media-placeholder video {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -839,13 +839,17 @@
                 <p>- Travail d'équipe - Modélisation 3D - Domotique Arduino</p>
             </div>
 
-            <!-- Galerie d'images 2x2 -->
+            <!-- Galerie d'images / vidéos 2x2 -->
             <div class="project-gallery-grid">
                 <figure class="gallery-item">
-    <div class="media-placeholder">
-        <mp4 src="video_maison_connectée" alt="Vidéo Maison Connectée">
-    </div>
-</figure>
+                    <div class="media-placeholder">
+                        <!-- Remplacez "video-maison-connectee.mp4" par le nom de votre fichier vidéo -->
+                        <video controls poster="miniature.jpg">
+                            <source src="video_maison_connectée.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                </figure>
                 
                 <figure class="gallery-item">
                     <div class="media-placeholder">
